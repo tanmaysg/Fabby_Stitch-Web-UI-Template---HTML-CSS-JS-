@@ -1,7 +1,9 @@
-var headerlist = document.querySelector(".menu_list");
+var headerlist = document.querySelectorAll(".menu_item");
 var menucontent = document.querySelector(".menu_content");
 
-headerlist.addEventListener("click", open);
+for(let i=0; i<headerlist.length; i++){
+    headerlist[i].addEventListener("click", open);
+}
 var x=1;
 function open(){
     if(x%2 == 0){
