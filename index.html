@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Fabby Stich | Home</title>
 </head>
 <body>
@@ -109,21 +112,57 @@
         </header>
 
         <div class="content">
-            <div class="banner">
-                <div class="text">
-                    <h1 class="heading">Trendy Collection</h1>
-                    <p class="tag_line">New Modern Stylish Fashionable Men's Wear Shirt</p>
-                    <button class="shop_button">SHOP NOW</button>
-                    <div class="page_num">
-                        <p class="inactive">01</p>
-                        <p class="slash">/</p>
-                        <p class="active">02</p>
-                        <p class="slash">/</p>
-                        <p class="inactive">03</p>
+            <div class="banner_slider slick-theme">
+                <div class="banner">
+                    <div class="text">
+                        <h1 class="heading">Trendy Collection</h1>
+                        <p class="tag_line">New Modern Stylish Fashionable Men's Wear Shirt</p>
+                        <button class="shop_button">SHOP NOW</button>
+                        <div class="page_num">
+                            <p class="inactive">01</p>
+                            <p class="slash">/</p>
+                            <p class="active">02</p>
+                            <p class="slash">/</p>
+                            <p class="inactive">03</p>
+                        </div>
+                    </div>
+                    <div class="banner_image">
+                        <img src="./Images/banner_img.png" class="image">
                     </div>
                 </div>
-                <div class="banner_image">
-                    <img src="./Images/banner_img.png" class="image">
+                <div class="banner">
+                    <div class="text">
+                        <h1 class="heading">Trendy Collection 2</h1>
+                        <p class="tag_line">New Modern Stylish Fashionable Men's Wear Shirt</p>
+                        <button class="shop_button">SHOP NOW</button>
+                        <div class="page_num">
+                            <p class="inactive">01</p>
+                            <p class="slash">/</p>
+                            <p class="active">02</p>
+                            <p class="slash">/</p>
+                            <p class="inactive">03</p>
+                        </div>
+                    </div>
+                    <div class="banner_image">
+                        <img src="./Images/banner_img.png" class="image">
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="text">
+                        <h1 class="heading">Trendy Collection 3</h1>
+                        <p class="tag_line">New Modern Stylish Fashionable Men's Wear Shirt</p>
+                        <button class="shop_button">SHOP NOW</button>
+                        <div class="page_num">
+                            <p class="inactive">01</p>
+                            <p class="slash">/</p>
+                            <p class="active">02</p>
+                            <p class="slash">/</p>
+                            <p class="inactive">03</p>
+                        </div>
+                    </div>
+                    <div class="banner_image">
+                        <img src="./Images/banner_img.png" class="image">
+                    </div>
                 </div>
             </div>
 
@@ -193,15 +232,15 @@
                         <h3>Our Products In Store</h3>
                         <p>Top view in this week</p>
                     </div>
-                    <div class="items">
+                    <div class="items" id="tabs">
                         <ul class="item_list">
-                            <li class="active">New Products</li>
-                            <li>Featured Products</li>
-                            <li>On Sale Products</li>
-                            <li>Trending Products</li>
+                            <li><a href="#tabs-1" class="active">New Products</li></a>
+                            <li><a href="#tabs-1">Featured Products</li></a>
+                            <li><a href="#tabs-1">On Sale Products</li></a>
+                            <li><a href="#tabs-1">Trending Products</li></a>
                         </ul>
                     </div>
-                    <div class="products">
+                    <div class="products" id="tabs-1">
                         <div class="product1">
                             <img src="./Images/top_viewed1.png">
                             <h6>Dolce & Gabbana</h6>
@@ -389,13 +428,13 @@
                     </div>
                 </div>
                 <div class="group2">
-                    <div class="text">
+                    <div class="text" id="tabs">
                         <ul class="item_list">
-                            <li class="active">New Products</li>
-                            <li>Best Selling</li>
+                            <li><a href="#new" class="active">New Products</li></a>
+                            <li><a href="#best">Best Selling</li></a>
                         </ul>
                     </div>
-                    <div class="products">
+                    <div class="products" id="new">
                         <div class="arrow left_arrow">
                             <img src="./Images/left-arrow.png" alt="arrowimg">
                         </div>
@@ -528,6 +567,15 @@
         </footer>
     </div>
 
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('.banner_slider').slick();
+    });
+    </script>
 </body>
 </html>

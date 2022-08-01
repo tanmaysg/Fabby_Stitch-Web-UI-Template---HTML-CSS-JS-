@@ -32,3 +32,9 @@ var x = setInterval(()=>{
     document.getElementById("seconds").innerHTML = seconds;
 
 }, 1000);
+
+//Jquery Tabs Code
+
+$( function() {
+    $( "#tabs" ).tabs();
+  } );
